@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Percussion Perfection — About</title>
+  <style>
+  /* ====== BASE / RESET ====== */
+  :root{
+    --bg:#0b0b0b; /* deep black */
+    --card:#0f0f10;
+    --accent:#d4af37; /* gold */
+    --muted:#9aa0a6;
+    --glass: rgba(255,255,255,0.03);
+    --radius:14px;
+    --max-width:1100px;
+    --flow:1.25rem;
+    --ff-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    --ff-display: "Cinzel", "Times New Roman", serif; /* elegant/medieval feel if available */
+  }
+
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0;
+    font-family:var(--ff-sans);
+    background:linear-gradient(180deg, #050505 0%, #0b0b0b 100%);
+    color:#eee;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    line-height:1.45;
+    padding:3rem 1.25rem;
+    display:flex;
+    justify-content:center;
+  }
+
+  .container{
+    width:100%;
+    max-width:var(--max-width);
+    margin:0 auto;
+    display:grid;
+    gap:var(--flow);
+    grid-template-columns: 1fr 360px;
+    align-items:start;
+  }
+
+  /* HEADER */
+  header{
+    grid-column:1/-1;
+    display:flex;
+    gap:1rem;
+    align-items:center;
+    justify-content:space-between;
+  }
+
+  .brand{
+    display:flex;
+    gap:.85rem;
+    align-items:center;
+  }
+
+  .logo{
+    width:64px; height:64px;
+    background:linear-gradient(135deg, var(--accent), #b8842b);
+    border-radius:8px;
+    display:grid;place-items:center;
+    color:#0b0b0b;
+    font-weight:900;
+    font-family:var(--ff-display);
+    box-shadow:0 6px 20px rgba(212,175,55,0.18), inset 0 -6px 18px rgba(0,0,0,0.25);
+    transform:rotate(-15deg);
+  }
+
+  .brand h2 {
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+  }
+
+  .about-me {
+    margin-top: 0;
+  }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">PP</div>
+        <h1>Percussion Perfection</h1>
+      </div>
+      <h2>About Us</h2>
+    </header>
+    <section class="about-me">
+        <h3>About Me:
+
+          My name is Domonic Hampton, and I am the founder of Percussion Perfection. With over a year of experience in percussion performance and education, I am passionate about helping musicians of all levels achieve their full potential. My journey began at a young age, and through years of dedication and practice, I have honed my skills and developed effective teaching methods. I believe that with the right guidance and resources, anyone can excel in percussion. At Percussion Perfection, I am committed to providing high-quality instruction and support to help you reach your musical goals. 
+          
+        </h3>
+    </section>
+  </div>
+</body>
+</html>
